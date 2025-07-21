@@ -36,7 +36,7 @@ async def receive_messages(websocket):
             print("Error processing message:", e)
 
 async def run_websocket_bot():
-    token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Nzk3OTUyMGYxM2Q2NTZiY2JmYTA3MzUiLCJpYXQiOjE3NTIzMjE4MTIsImV4cCI6MTc1MjkyNjYxMiwianRpIjoiMDQ5ZDBlOGMtZDIyMi00NDlhLTlmOTktMmYwZmVjZTEwNmU4IiwicHVycG9zZSI6IndlYnNvY2tldCJ9.oKb85s6iz-d13mRIbWQmvTLX9gzkQpt_vUVzi4DvqXs"  # Replace this with your actual token
+    token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Nzk3OTUyMGYxM2Q2NTZiY2JmYTA3MzUiLCJpYXQiOjE3NTMwODIzNDUsImV4cCI6MTc1MzY4NzE0NSwianRpIjoiMjk1Y2UxODUtNzI1ZC00N2U0LTk0MzUtNGNmMzhmMzdlYWVmIiwicHVycG9zZSI6IndlYnNvY2tldCJ9.TMhIhrRqw3Tig8khfbo101CxafLxzuwNI9BJTxVeVQU"  # Replace this with your actual token
     websocket_url = f"wss://websocket.layeredge.io/ws/node?token={token}"
 
     while True:
